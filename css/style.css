@@ -1,12 +1,190 @@
 /* Styles for Mobile Site */
 
+body {
+    font-family: "Tenor Sans", sans-serif;
+    background-color: #FFFFFF;
+    color: #333333;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Madimi One", sans-serif;
+    text-align: center;
+}
+
 /* Header & Hero */
+
+header {
+    background-color: #669900;
+    color: #FFFFFF;
+    border: 3px solid #FFB701;
+    padding: 20px;
+    margin-bottom: 80px;
+    margin-top: 30px;
+}
+
+#hero {
+    background-color: #FFB701;
+    color: #333333;
+    border: 3px solid #F53701;
+    padding: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-content {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+#hero img {
+    max-width: 100px;
+    height: auto;
+    margin-right: 20px;
+}
+
+#hero p {
+    text-align: right;
+    margin: 0;
+}
+
+.hero-content h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
 
 /* Projects */
 
+#projects {
+    background-color: #FFFFFF;
+    color: #333333;
+    padding: 20px;
+    margin-bottom: 20px;
+    font-size: 50px;
+}
+
+.project {
+    margin-bottom: 20px;
+}
+
+.booking {
+    background-color: #F53701;
+}
+
+.real-estate {
+    background-color: #017999;
+}
+
+.community {
+    background-color: #669900;
+}
+
+.project h3 {
+    color: #333333;
+    font-size: 20px;
+}
+
+.project img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.description {
+    text-align: center;
+}
+
+
 /* Reviews */
 
+#reviews {
+    background-color: #990066;
+    color: #FFFFFF;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+#reviews h2 {
+    font-size: 50px;
+}
+
+.review {
+    border-bottom: 1px solid #FFFFFF;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.review .content {
+    font-family: "Madimi One";
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.review .name {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.review .title {
+    font-style: italic;
+    margin-bottom: 5px;
+}
+
+.review .rating {
+    margin-bottom: 5px;
+}
+
+.review .content {
+    line-height: 1.5;
+}
+
+
 /* Footer */
+
+footer {
+    background-color: #333333;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Define animation keyframes */
+@keyframes fadeInScale {
+    from {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Apply animation to elements */
+.hero-content {
+    animation: fadeInScale 1s ease-in-out;
+}
+
+.project {
+    animation: fadeInScale 1s ease-in-out;
+}
+
+.review {
+    animation: fadeInScale 1s ease-in-out;
+}
+
+
 
 
 /* Media state for Desktop site */
@@ -14,9 +192,21 @@
 
     /* Header & Hero */
 
+    header, #hero {
+        padding: 40px;
+    }
+
     /* Projects */
 
+    .project img {
+        max-width: 80%;
+    }
+
     /* Reviews */
+
+    .review {
+        padding: 30px;
+    }
 
     /* Footer */
 
